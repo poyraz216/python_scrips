@@ -1,0 +1,20 @@
+import os
+from datetime import datetime, timedelta
+import psycopg2
+import numpy as np
+import csv
+//add DB contac
+
+curOra = conOra.cursor()
+today = datetime.today() - timedelta(days=1)
+
+
+
+
+data8 = data8.split("\n")
+data8 = data8[2:-3]
+
+for a in data8:
+        a = a.split("|")
+        print(a[0],';',a[-1])
+
